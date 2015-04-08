@@ -1,0 +1,154 @@
+<title>Белые вещи. Колонисты 2.</title>
+<style>
+body {
+background: #000;
+margin: 0;
+padding: 0;
+}
+#headline {
+width: 100%;
+color: #111;
+background: #999;
+text-align: center;
+font-size: 22pt;
+}
+#element1 {
+width: 170px;
+height: 120px;
+background: #222;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element2 {
+width: 170px;
+height: 120px;
+background: #111;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element3 {
+width: 170px;
+height: 120px;
+background: #333;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element4 {
+width: 170px;
+height: 120px;
+background: #222;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element5 {
+width: 170px;
+height: 120px;
+background: #111;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element6 {
+width: 170px;
+height: 120px;
+background: #333;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element7 {
+width: 170px;
+height: 120px;
+background: #222;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element8 {
+width: 170px;
+height: 120px;
+background: #111;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+#element9 {
+width: 170px;
+height: 120px;
+background: #333;
+color: #ffffff;
+border: 2px solid #777;
+position: absolute;
+top: 0;
+left: 21;
+color: #fff;
+}
+
+</style>
+<body onload="setInterval('getPunk(\'element1\');getPunk(\'element2\');getPunk(\'element3\');getPunk(\'element4\');getPunk(\'element5\');getPunk(\'element6\');getPunk(\'element7\');getPunk(\'element8\');getPunk(\'element9\');', 1000)">
+<div id="headline">Колонисты 2: Возрождение</div>
+<div id="element1"></div>
+<div id="element2"></div>
+<div id="element3"></div>
+<div id="element4"></div>
+<div id="element5"></div>
+<div id="element6"></div>
+<div id="element7"></div>
+<div id="element8"></div>
+<div id="element9"></div>
+<script>
+function legends(a, z) {var num=(Math.floor(Math.random() * (a - z)) + z); return num;}
+arr=new Array();arr[1] = "level: 1<br>hp: 20<br>mp: 15<br>mag-def: 1<br>fiz-def: 3<br>damage: 10 - 10<br><br>";arr[2] = "level: 2<br>hp: 40<br>mp: 30<br>mag-def: 2<br>fiz-def: 6<br>damage: 20 - 20<br><br>";arr[3] = "level: 3<br>hp: 55<br>mp: 45<br>mag-def: 3<br>fiz-def: 9<br>damage: 30 - 30<br><br>";arr[4] = "level: 4<br>hp: 75<br>mp: 55<br>mag-def: 4<br>fiz-def: 12<br>damage: 40 - 40<br><br>";arr[5] = "level: 5<br>hp: 90<br>mp: 70<br>mag-def: 5<br>fiz-def: 15<br>damage: 45 - 45<br><br>";arr[6] = "level: 6<br>hp: 110<br>mp: 85<br>mag-def: 6<br>fiz-def: 18<br>damage: 55 - 55<br><br>";arr[7] = "level: 7<br>hp: 130<br>mp: 95<br>mag-def: 7<br>fiz-def: 21<br>damage: 65 - 65<br><br>";arr[8] = "level: 8<br>hp: 145<br>mp: 110<br>mag-def: 8<br>fiz-def: 24<br>damage: 75 - 75<br><br>";arr[9] = "level: 9<br>hp: 165<br>mp: 125<br>mag-def: 9<br>fiz-def: 27<br>damage: 85 - 85<br><br>";arr[10] = "level: 10<br>hp: 200<br>mp: 150<br>mag-def: 10<br>fiz-def: 30<br>damage: 100 - 100<br><br>";arr[11] = "level: 11<br>hp: 220<br>mp: 165<br>mag-def: 11<br>fiz-def: 33<br>damage: 110 - 110<br><br>";arr[12] = "level: 12<br>hp: 240<br>mp: 180<br>mag-def: 12<br>fiz-def: 36<br>damage: 120 - 120<br><br>";arr[13] = "level: 13<br>hp: 260<br>mp: 195<br>mag-def: 13<br>fiz-def: 39<br>damage: 130 - 130<br><br>";arr[14] = "level: 14<br>hp: 280<br>mp: 210<br>mag-def: 14<br>fiz-def: 42<br>damage: 140 - 140<br><br>";arr[15] = "level: 15<br>hp: 300<br>mp: 225<br>mag-def: 15<br>fiz-def: 45<br>damage: 150 - 150<br><br>";arr[16] = "level: 16<br>hp: 320<br>mp: 240<br>mag-def: 16<br>fiz-def: 48<br>damage: 160 - 160<br><br>";arr[17] = "level: 17<br>hp: 340<br>mp: 255<br>mag-def: 17<br>fiz-def: 51<br>damage: 170 - 170<br><br>";arr[18] = "level: 18<br>hp: 360<br>mp: 270<br>mag-def: 18<br>fiz-def: 54<br>damage: 180 - 180<br><br>";arr[19] = "level: 19<br>hp: 380<br>mp: 285<br>mag-def: 19<br>fiz-def: 57<br>damage: 190 - 190<br><br>";arr[20] = "level: 20<br>hp: 400<br>mp: 300<br>mag-def: 20<br>fiz-def: 60<br>damage: 200 - 200<br><br>";arr[21] = "level: 21<br>hp: 420<br>mp: 315<br>mag-def: 21<br>fiz-def: 63<br>damage: 210 - 210<br><br>";arr[22] = "level: 22<br>hp: 440<br>mp: 330<br>mag-def: 22<br>fiz-def: 66<br>damage: 220 - 220<br><br>";arr[23] = "level: 23<br>hp: 460<br>mp: 345<br>mag-def: 23<br>fiz-def: 69<br>damage: 230 - 230<br><br>";arr[24] = "level: 24<br>hp: 480<br>mp: 360<br>mag-def: 24<br>fiz-def: 72<br>damage: 240 - 240<br><br>";arr[25] = "level: 25<br>hp: 500<br>mp: 375<br>mag-def: 25<br>fiz-def: 75<br>damage: 250 - 250<br><br>";arr[26] = "level: 26<br>hp: 520<br>mp: 390<br>mag-def: 26<br>fiz-def: 78<br>damage: 260 - 260<br><br>";arr[27] = "level: 27<br>hp: 540<br>mp: 405<br>mag-def: 27<br>fiz-def: 81<br>damage: 270 - 270<br><br>";arr[28] = "level: 28<br>hp: 560<br>mp: 420<br>mag-def: 28<br>fiz-def: 84<br>damage: 280 - 280<br><br>";arr[29] = "level: 29<br>hp: 580<br>mp: 435<br>mag-def: 29<br>fiz-def: 87<br>damage: 290 - 290<br><br>";arr[30] = "level: 30<br>hp: 600<br>mp: 450<br>mag-def: 30<br>fiz-def: 90<br>damage: 300 - 300<br><br>";arr[31] = "level: 31<br>hp: 620<br>mp: 465<br>mag-def: 31<br>fiz-def: 93<br>damage: 310 - 310<br><br>";arr[32] = "level: 32<br>hp: 640<br>mp: 480<br>mag-def: 32<br>fiz-def: 96<br>damage: 320 - 320<br><br>";arr[33] = "level: 33<br>hp: 660<br>mp: 495<br>mag-def: 33<br>fiz-def: 99<br>damage: 330 - 330<br><br>";arr[34] = "level: 34<br>hp: 680<br>mp: 510<br>mag-def: 34<br>fiz-def: 102<br>damage: 340 - 340<br><br>";arr[35] = "level: 35<br>hp: 700<br>mp: 525<br>mag-def: 35<br>fiz-def: 105<br>damage: 350 - 350<br><br>";arr[36] = "level: 36<br>hp: 720<br>mp: 540<br>mag-def: 36<br>fiz-def: 108<br>damage: 360 - 325<br><br>";arr[37] = "level: 37<br>hp: 740<br>mp: 555<br>mag-def: 37<br>fiz-def: 111<br>damage: 370 - 345<br><br>";arr[38] = "level: 38<br>hp: 760<br>mp: 570<br>mag-def: 38<br>fiz-def: 114<br>damage: 380 - 365<br><br>";arr[39] = "level: 39<br>hp: 780<br>mp: 585<br>mag-def: 39<br>fiz-def: 117<br>damage: 390 - 385<br><br>";arr[40] = "level: 40<br>hp: 800<br>mp: 600<br>mag-def: 40<br>fiz-def: 120<br>damage: 400 - 400<br><br>";arr[41] = "level: 41<br>hp: 820<br>mp: 615<br>mag-def: 41<br>fiz-def: 123<br>damage: 410 - 425<br><br>";arr[42] = "level: 42<br>hp: 840<br>mp: 630<br>mag-def: 42<br>fiz-def: 126<br>damage: 420 - 445<br><br>";arr[43] = "level: 43<br>hp: 860<br>mp: 645<br>mag-def: 43<br>fiz-def: 129<br>damage: 430 - 465<br><br>";arr[44] = "level: 44<br>hp: 880<br>mp: 660<br>mag-def: 44<br>fiz-def: 132<br>damage: 440 - 485<br><br>";arr[45] = "level: 45<br>hp: 900<br>mp: 675<br>mag-def: 45<br>fiz-def: 135<br>damage: 450 - 510<br><br>";arr[46] = "level: 46<br>hp: 920<br>mp: 690<br>mag-def: 46<br>fiz-def: 138<br>damage: 460 - 530<br><br>";arr[47] = "level: 47<br>hp: 940<br>mp: 705<br>mag-def: 47<br>fiz-def: 141<br>damage: 470 - 555<br><br>";arr[48] = "level: 48<br>hp: 960<br>mp: 720<br>mag-def: 48<br>fiz-def: 144<br>damage: 480 - 580<br><br>";arr[49] = "level: 49<br>hp: 890<br>mp: 670<br>mag-def: 45<br>fiz-def: 135<br>damage: 490 - 605<br><br>";arr[50] = "level: 50<br>hp: 930<br>mp: 695<br>mag-def: 47<br>fiz-def: 141<br>damage: 500 - 625<br><br>";arr[51] = "level: 51<br>hp: 965<br>mp: 725<br>mag-def: 49<br>fiz-def: 147<br>damage: 510 - 655<br><br>";arr[52] = "level: 52<br>hp: 1005<br>mp: 755<br>mag-def: 51<br>fiz-def: 153<br>damage: 520 - 680<br><br>";arr[53] = "level: 53<br>hp: 1045<br>mp: 785<br>mag-def: 53<br>fiz-def: 159<br>damage: 530 - 705<br><br>";arr[54] = "level: 54<br>hp: 1080<br>mp: 810<br>mag-def: 54<br>fiz-def: 162<br>damage: 540 - 730<br><br>";arr[55] = "level: 55<br>hp: 1125<br>mp: 845<br>mag-def: 57<br>fiz-def: 171<br>damage: 550 - 760<br><br>";arr[56] = "level: 56<br>hp: 1165<br>mp: 875<br>mag-def: 59<br>fiz-def: 177<br>damage: 560 - 785<br><br>";arr[57] = "level: 57<br>hp: 1205<br>mp: 905<br>mag-def: 61<br>fiz-def: 183<br>damage: 570 - 815<br><br>";arr[58] = "level: 58<br>hp: 1250<br>mp: 935<br>mag-def: 63<br>fiz-def: 189<br>damage: 580 - 845<br><br>";arr[59] = "level: 59<br>hp: 1290<br>mp: 970<br>mag-def: 65<br>fiz-def: 195<br>damage: 590 - 875<br><br>";arr[60] = "level: 60<br>hp: 1335<br>mp: 1000<br>mag-def: 67<br>fiz-def: 201<br>damage: 600 - 900<br><br>";arr[61] = "level: 61<br>hp: 1380<br>mp: 1035<br>mag-def: 69<br>fiz-def: 207<br>damage: 610 - 935<br><br>";arr[62] = "level: 62<br>hp: 1425<br>mp: 1070<br>mag-def: 72<br>fiz-def: 216<br>damage: 620 - 965<br><br>";arr[63] = "level: 63<br>hp: 1470<br>mp: 1105<br>mag-def: 74<br>fiz-def: 222<br>damage: 630 - 995<br><br>";arr[64] = "level: 64<br>hp: 1520<br>mp: 1140<br>mag-def: 76<br>fiz-def: 228<br>damage: 640 - 1025<br><br>";arr[65] = "level: 65<br>hp: 1565<br>mp: 1175<br>mag-def: 79<br>fiz-def: 237<br>damage: 650 - 1060<br><br>";arr[66] = "level: 66<br>hp: 1615<br>mp: 1215<br>mag-def: 81<br>fiz-def: 243<br>damage: 660 - 1090<br><br>";arr[67] = "level: 67<br>hp: 1665<br>mp: 1250<br>mag-def: 84<br>fiz-def: 252<br>damage: 670 - 1125<br><br>";arr[68] = "level: 68<br>hp: 1715<br>mp: 1285<br>mag-def: 86<br>fiz-def: 258<br>damage: 680 - 1160<br><br>";arr[69] = "level: 69<br>hp: 1765<br>mp: 1325<br>mag-def: 89<br>fiz-def: 267<br>damage: 690 - 1195<br><br>";arr[70] = "level: 70<br>hp: 1815<br>mp: 1365<br>mag-def: 91<br>fiz-def: 273<br>damage: 700 - 1225<br><br>";arr[71] = "level: 71<br>hp: 1870<br>mp: 1405<br>mag-def: 94<br>fiz-def: 282<br>damage: 710 - 1265<br><br>";arr[72] = "level: 72<br>hp: 1920<br>mp: 1440<br>mag-def: 96<br>fiz-def: 288<br>damage: 650 - 1300<br><br>";arr[73] = "level: 73<br>hp: 1975<br>mp: 1485<br>mag-def: 99<br>fiz-def: 297<br>damage: 670 - 1335<br><br>";arr[74] = "level: 74<br>hp: 2030<br>mp: 1525<br>mag-def: 102<br>fiz-def: 306<br>damage: 685 - 1370<br><br>";arr[75] = "level: 75<br>hp: 2085<br>mp: 1565<br>mag-def: 105<br>fiz-def: 315<br>damage: 705 - 1410<br><br>";arr[76] = "level: 76<br>hp: 2140<br>mp: 1605<br>mag-def: 107<br>fiz-def: 321<br>damage: 725 - 1445<br><br>";arr[77] = "level: 77<br>hp: 2200<br>mp: 1650<br>mag-def: 110<br>fiz-def: 330<br>damage: 745 - 1485<br><br>";arr[78] = "level: 78<br>hp: 2255<br>mp: 1690<br>mag-def: 113<br>fiz-def: 339<br>damage: 765 - 1525<br><br>";arr[79] = "level: 79<br>hp: 2315<br>mp: 1735<br>mag-def: 116<br>fiz-def: 348<br>damage: 785 - 1565<br><br>";arr[80] = "level: 80<br>hp: 2375<br>mp: 1780<br>mag-def: 119<br>fiz-def: 357<br>damage: 800 - 1600<br><br>";arr[81] = "level: 81<br>hp: 2430<br>mp: 1825<br>mag-def: 122<br>fiz-def: 366<br>damage: 825 - 1645<br><br>";arr[82] = "level: 82<br>hp: 2495<br>mp: 1870<br>mag-def: 125<br>fiz-def: 375<br>damage: 845 - 1685<br><br>";arr[83] = "level: 83<br>hp: 2555<br>mp: 1915<br>mag-def: 128<br>fiz-def: 384<br>damage: 865 - 1725<br><br>";arr[84] = "level: 84<br>hp: 2615<br>mp: 1960<br>mag-def: 131<br>fiz-def: 393<br>damage: 885 - 1765<br><br>";arr[85] = "level: 85<br>hp: 2680<br>mp: 2010<br>mag-def: 134<br>fiz-def: 402<br>damage: 905 - 1810<br><br>";arr[86] = "level: 86<br>hp: 2740<br>mp: 2055<br>mag-def: 137<br>fiz-def: 411<br>damage: 925 - 1850<br><br>";arr[87] = "level: 87<br>hp: 2805<br>mp: 2105<br>mag-def: 141<br>fiz-def: 423<br>damage: 950 - 1895<br><br>";arr[88] = "level: 88<br>hp: 2870<br>mp: 2155<br>mag-def: 144<br>fiz-def: 432<br>damage: 970 - 1940<br><br>";arr[89] = "level: 89<br>hp: 2935<br>mp: 2205<br>mag-def: 147<br>fiz-def: 441<br>damage: 995 - 1985<br><br>";arr[90] = "level: 90<br>hp: 3000<br>mp: 2250<br>mag-def: 150<br>fiz-def: 450<br>damage: 1015 - 2025<br><br>";arr[91] = "level: 91<br>hp: 3070<br>mp: 2305<br>mag-def: 154<br>fiz-def: 462<br>damage: 1040 - 2075<br><br>";arr[92] = "level: 92<br>hp: 3135<br>mp: 2355<br>mag-def: 157<br>fiz-def: 471<br>damage: 1060 - 2120<br><br>";arr[93] = "level: 93<br>hp: 3205<br>mp: 2405<br>mag-def: 161<br>fiz-def: 483<br>damage: 1085 - 2165<br><br>";arr[94] = "level: 94<br>hp: 3275<br>mp: 2455<br>mag-def: 164<br>fiz-def: 492<br>damage: 1105 - 2210<br><br>";arr[95] = "level: 95<br>hp: 3345<br>mp: 2510<br>mag-def: 168<br>fiz-def: 504<br>damage: 1130 - 2260<br><br>";arr[96] = "level: 96<br>hp: 3415<br>mp: 2560<br>mag-def: 171<br>fiz-def: 513<br>damage: 1155 - 2305<br><br>";arr[97] = "level: 97<br>hp: 3485<br>mp: 2615<br>mag-def: 175<br>fiz-def: 525<br>damage: 1180 - 2355<br><br>";arr[98] = "level: 98<br>hp: 3560<br>mp: 2670<br>mag-def: 178<br>fiz-def: 534<br>damage: 1205 - 2405<br><br>";arr[99] = "level: 99<br>hp: 3630<br>mp: 2725<br>mag-def: 182<br>fiz-def: 546<br>damage: 1230 - 2455<br><br>";arr[100] = "level: 100<br>hp: 3705<br>mp: 2780<br>mag-def: 186<br>fiz-def: 558<br>damage: 1250 - 2500<br><br>";
+function getPunk(element) {
+//w=screen.width;
+//h=screen.height;
+w=document.body.clientWidth-(180);
+h=document.body.clientHeight-(180);
+newW=legends(0, w);
+newH=legends(55, h);
+r=legends(1, 100);
+document.getElementById(element).innerHTML=arr[r];
+document.getElementById(element).style.left=newW;
+document.getElementById(element).style.top=newH;
+
+}
+getPunk('element1');
+getPunk('element2');
+getPunk('element3');
+getPunk('element4');
+getPunk('element5');
+getPunk('element6');
+getPunk('element7');
+getPunk('element8');
+getPunk('element9');
+</script>
+
+</body>
